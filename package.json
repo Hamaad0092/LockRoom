@@ -2,7 +2,7 @@
   "name": "lockroom",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {"pw": "npx playwright test TwoORGinvite.spec.js --headed --project=chromium"},
+  "scripts": {"pw": "npx playwright test TwoOrgsAndTworooms.spec.js --headed --project=chromium"},
   "keywords": [],
   "author": "",
   "license": "ISC",
