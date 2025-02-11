@@ -55,8 +55,8 @@ test('test', async ({ page }) => {
     await page.getByRole('textbox', { name: 'email@example.com,email@' }).fill(org2);
     await page.waitForTimeout(1000);
     await page.getByRole('combobox').selectOption({ index: 2 });
-    await page.waitForTimeout(2000);
     await page.getByRole('button', { name: 'Send Invites' }).click();
+    await page.waitForTimeout(1000);
 
 });
 
@@ -107,7 +107,7 @@ test('test2', async ({ page }) => {
     await page.getByRole('textbox', { name: 'email@example.com,email@' }).fill(org1);
     await page.waitForTimeout(1000);
     await page.getByRole('combobox').selectOption({ index: 2 });
-    await page.waitForTimeout(2000);
     await page.getByRole('button', { name: 'Send Invites' }).click();
+    await page.waitForTimeout(1000);
 
 });
